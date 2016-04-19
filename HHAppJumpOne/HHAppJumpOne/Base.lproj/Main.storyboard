@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXy-bD-F0F">
+                                <rect key="frame" x="0.0" y="205" width="320" height="84"/>
+                                <color key="backgroundColor" red="0.2833957344417587" green="0.65229388809090727" blue="0.8884191176666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="3vA-Tr-Nie"/>
+                                </constraints>
+                                <state key="normal" title="跳转AppTow"/>
+                                <connections>
+                                    <action selector="clickJumpAppButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xme-In-eKA"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Please enter the parameters of the jump!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="T8Q-fC-kz6">
+                                <rect key="frame" x="0.0" y="20" width="320" height="184"/>
+                                <color key="backgroundColor" red="0.45765289056447145" green="0.62099995486123372" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="xpT-yP-OGO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="T8Q-fC-kz6" secondAttribute="trailing" id="2dm-ms-QZf"/>
+                            <constraint firstItem="T8Q-fC-kz6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2pW-fU-J3K"/>
+                            <constraint firstAttribute="trailing" secondItem="aXy-bD-F0F" secondAttribute="trailing" id="3UH-bU-hID"/>
+                            <constraint firstItem="aXy-bD-F0F" firstAttribute="top" secondItem="T8Q-fC-kz6" secondAttribute="bottom" constant="1" id="5va-d8-Ozi"/>
+                            <constraint firstItem="aXy-bD-F0F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PgP-Sa-4pv"/>
+                            <constraint firstItem="T8Q-fC-kz6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QzT-dg-CgT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="T8Q-fC-kz6" id="i7A-qc-hO7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="321"/>
+        </scene>
+    </scenes>
+</document>
